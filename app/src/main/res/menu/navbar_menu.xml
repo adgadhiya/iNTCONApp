@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/group_info">
+
+        <menu>
+
+            <item android:title="@string/change_year"
+                app:actionLayout="@layout/navbar_spinner"
+                android:id="@+id/navbar_menu_change_year"
+                android:icon="@drawable/ic_format_list_numbered_black_24dp"/>
+
+            <item android:title="@string/requests"
+                android:id="@+id/navbar_menu_requests"
+                app:actionLayout="@layout/menu_counter"
+                android:icon="@drawable/ic_group_add_black_24dp"/>
+
+            <item android:title="@string/group_members"
+                app:actionLayout="@layout/menu_counter"
+                android:id="@+id/navbar_menu_group_members"
+                android:icon="@drawable/ic_group_black_24dp12"/>
+
+            <item android:title="@string/group_detail"
+                android:id="@+id/navbar_menu_about_group"
+                android:icon="@drawable/ic_info_black_24dp"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="@string/add_group">
+
+        <menu>
+
+            <item android:title="@string/create_group"
+                android:id="@+id/navbar_menu_create_group"
+                android:icon="@drawable/ic_group_black_24dp12"/>
+
+            <item  android:title="@string/join_group"
+                android:id="@+id/navbar_menu_join_group"
+                android:icon="@drawable/requests"/>
+
+            <item android:title="@string/sent_request"
+                app:actionLayout="@layout/menu_counter"
+                android:id="@+id/navbar_menu_sent_requests"
+                android:icon="@drawable/ic_add_box_black_24dp"/>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="@string/help_center">
+
+        <menu>
+
+            <item android:title="@string/help_and_feedback"
+                app:actionLayout="@layout/menu_counter"
+                android:id="@+id/navbar_menu_help_and_feedback"
+                android:icon="@drawable/ic_help_black_24dp"/>
+
+            <item android:title="@string/privacy_policy"
+                app:actionLayout="@layout/menu_counter"
+                android:id="@+id/navbar_menu_privacy_policy"
+                android:icon="@drawable/ic_label_black_24dp"/>
+
+            <item android:title="@string/faq"
+                android:icon="@drawable/faq"
+                android:id="@+id/navbar_menu_faq"/>
+
+            <item android:title="@string/logout"
+                android:id="@+id/navbar_menu_logout"
+                android:icon="@drawable/logout"/>
+
+        </menu>
+
+    </item>
+
+
+</menu>

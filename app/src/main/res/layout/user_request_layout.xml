@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:id="@+id/user_request_user_profile"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="1dp"
+                android:background="@drawable/default_profile_background"
+                android:src="@mipmap/profile_default"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/user_request_user_name"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/user_request_requested_on"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/user_request_user_field" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/user_request_user_email"
+                    android:drawablePadding="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="3">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/user_request_cancel_request"
+                android:textColor="@android:color/holo_red_light"
+                android:text="@string/cancel"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/user_request_confirm_user"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/user"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/user_request_confirm_admin"
+                android:text="@string/admin"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NavigationView.JoinGroup">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/join_group_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Join Group"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp"
+                    android:background="#F0F0F0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="@string/intcon_groups"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"/>
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="horizontal"
+                            android:scrollbarSize="5dp"
+                            android:scrollbarStyle="insideInset"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                            android:id="@+id/join_group_intcon_special"/>
+
+                    </LinearLayout>
+
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/MyTheme2"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/join_group_intcon_progressBar"
+                        android:progressDrawable="@color/colorPrimary"
+                        android:layout_gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:scrollbarSize="2dp"
+                android:scrollbarStyle="insideInset"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="@string/search_result_init"
+                        android:textStyle="bold"
+                        android:id="@+id/join_group_tv"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                            android:id="@+id/join_group_search_group"/>
+
+                        <ProgressBar
+                            android:layout_height="wrap_content"
+                            style="@style/MyTheme2"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/join_group_search_progressBar"
+                            android:progressDrawable="@color/colorPrimary"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:drawablePadding="10dp"
+                            android:layout_margin="10dp"
+                            android:text="@string/no_result_found_init"
+                            android:drawableTop="@mipmap/ic_search_black_48dp"
+                            android:id="@+id/join_group_message_tv"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+

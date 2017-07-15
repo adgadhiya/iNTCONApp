@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/user_group_list_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:id="@+id/user_group_list_group_profile"
+            android:src="@mipmap/profile_default"
+            android:background="@drawable/round" />
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/user_group_list_new_notice"
+            android:background="@drawable/round_new_count"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            android:text="@string/new_notice_indicator"
+            tools:ignore="SmallSp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:id="@+id/user_group_list_group_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:singleLine="true"
+        android:textColor="#303030"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_group_list_overflow_btn"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:contentDescription="@string/vertical_dots"
+        android:background="@null"/>
+
+</LinearLayout>

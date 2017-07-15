@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout"
+    tools:context="com.myapp.unknown.iNTCON.OtherClasses.DashBoard">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar_dashboard"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme"
+                app:layout_scrollFlags="scroll|enterAlways"/>
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tablayout_dashboard"
+                app:tabMode="fixed"
+                app:tabIndicatorColor="#ffffff"
+                app:tabIndicatorHeight="4dp"
+                app:tabSelectedTextColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:tabGravity="fill"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager_board"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            android:id="@+id/add_notice_event_achievement_resources"
+            android:src="@drawable/ic_add_white_24dp"
+            app:backgroundTint="@color/colorPrimaryDark"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_gravity="bottom"
+            android:id="@+id/cancel_share_btn"
+            android:text="@string/cancel_share"
+            android:visibility="gone"
+            android:background="@drawable/border_three"
+            android:textColor="@android:color/white"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        app:menu="@menu/navbar_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navbar_header_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="180dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/navbar_group_list_rv"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/navbar_message_layout">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:alpha="0.5"
+                    android:contentDescription="@string/no_data"
+                    android:layout_gravity="center"
+                    android:id="@+id/navbar_message_iv"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/navbar_message_tv"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/navbar_message_refresh_create_btn"
+                    android:text="@string/refresh_now"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/navbar_message_separator_layout"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginEnd="100dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/or"
+                        android:layout_margin="5dp"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/darker_gray"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/navbar_message_join_btn"
+                    android:text="@string/join_group"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyTheme2"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/navbar_progressBar"
+                android:progressDrawable="@color/colorPrimary"
+                android:layout_gravity="center_horizontal" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

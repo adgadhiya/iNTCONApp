@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/docs"
+            android:textStyle="bold"
+            android:textColor="#ed1c24"
+            android:gravity="center"
+            android:id="@+id/downloading_resource_type_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/default_image" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:id="@+id/downloading_resource_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/downloading_resource_date"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/downloading_resource_time"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/downloading_resource_size"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:padding="10dp"
+            android:id="@+id/downloading_resource_cancel"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0.3"
+            android:contentDescription="@string/item_image"
+            android:src="@drawable/ic_cancel_black_24dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/downloading_resource_progress"
+        android:max="100"/>
+
+</LinearLayout>

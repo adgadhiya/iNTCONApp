@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:clickable="true"
+        android:id="@+id/home"
+        android:contentDescription="@string/home"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_arrow_upward_white_24dp"
+        android:rotation="-90"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/tv_delete_toolbar"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_layout_toolbar"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/profile_toolbar"
+            android:src="@mipmap/profile_default"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/name_toolbar"
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:id="@+id/time_toolbar"
+                android:textSize="12sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/search_group_layout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1dp"
+            android:background="@drawable/default_profile_background"
+            android:src="@mipmap/create_group_profile"
+            android:id="@+id/search_group_iv"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:textAllCaps="true"
+                android:id="@+id/search_group_group_name"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:id="@+id/search_date_created_on"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:background="#dcdcdc"
+        android:layout_below="@+id/search_group_layout"/>
+
+</RelativeLayout>

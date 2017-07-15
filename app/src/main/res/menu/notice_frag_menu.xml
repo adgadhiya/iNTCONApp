@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/fac_notice"
+        android:id="@+id/my_notice_action"
+        android:visible="false"
+        android:icon="@drawable/ic_person_white_18dp_not_selected"
+        app:showAsAction="ifRoom" />
+
+    <item android:title="@string/uni_notice"
+        android:id="@+id/uni_or_fac_action"
+        android:visible="false"
+        android:icon="@drawable/ic_account_balance_white_36dp"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <com.myapp.unknown.iNTCON.OtherClasses.ThreeHFourthWImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/acheivement_list_img"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ach_linear_box"
+        android:background="@android:color/white"
+        android:layout_below="@+id/acheivement_list_img"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_acheivement_list_title"
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_marginTop="90dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_acheivement_list_uni_name"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/tv_acheivement_list_likes"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:button="@null"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/like_checkbox"
+                    android:id="@+id/acheivement_list_chk_box"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:id="@+id/share_facebook_ach"
+                        android:clickable="true"
+                        android:contentDescription="@string/share_fb"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitXY"
+                        android:background="@null"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/facebook"/>
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:id="@+id/share_gplus_ach"
+                        android:clickable="true"
+                        android:contentDescription="@string/share_gplus"
+                        android:layout_toStartOf="@id/share_facebook_ach"
+                        android:layout_toLeftOf="@id/share_facebook_ach"
+                        android:scaleType="fitXY"
+                        android:background="@null"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/gplus_not"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:background="#21000000"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/delete_ach"
+        android:button="@null"
+        android:background="@drawable/delete_chk_box"
+        android:layout_above="@id/ach_linear_box"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:elevation="16dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="1dp"
+        android:fitsSystemWindows="true"
+        app:layout_anchorGravity="bottom"
+        android:layout_below="@id/acheivement_list_img"
+        android:layout_marginTop="-15dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_margin="2dp"
+            android:background="#F5F5F5"
+            android:contentDescription="@string/user_profile"
+            android:fitsSystemWindows="true"
+            android:id="@+id/achievement_profile" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acheivement_list_date"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingEnd="10dp"
+        android:textColor="#BDBDBD"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/acheivement_list_img"
+        android:textAppearance="?android:textAppearance"/>
+
+</RelativeLayout>

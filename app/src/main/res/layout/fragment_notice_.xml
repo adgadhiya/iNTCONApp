@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Notice.Notice_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notice_swipe_to_refresh">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/notice_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarSize="2dp"
+                android:scrollbars="vertical"
+                android:clipToPadding="false" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTheme2"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/notice_fragment_progressBar"
+        android:progressDrawable="@color/colorPrimary"
+        android:layout_gravity="center_horizontal" />
+
+    <ProgressBar
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:id="@+id/notice_progressBar"
+        android:indeterminateDrawable="@drawable/progress_dialog_back_ground"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="5dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/notice_message_layout">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.5"
+            android:contentDescription="@string/no_data"
+            android:layout_gravity="center"
+            android:id="@+id/notice_message_iv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/notice_message_tv"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/notice_message_refresh"
+            android:text="@string/refresh_now"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="20dp"
+        android:visibility="gone"
+        android:id="@+id/notice_message_new_notice_card_view"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_arrow_upward_white_24dp"
+            android:drawableLeft="@drawable/ic_arrow_upward_white_24dp"
+            android:drawablePadding="5dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:id="@+id/notice_message_new_notice_tv" />
+
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

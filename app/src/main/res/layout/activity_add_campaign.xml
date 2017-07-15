@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.myapp.unknown.iNTCON.Campaign.AddCampaign">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_addCampaign"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Add Event"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarSize="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="#F0F0F0"
+                        android:text="@string/title"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine|text"
+                        android:id="@+id/add_campaign_title"
+                        android:maxLines="6"
+                        android:minLines="2"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:maxLength="150"
+                        android:imeOptions="actionNext"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:background="@drawable/border_add"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="#F0F0F0"
+                        android:text="@string/description"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <EditText
+                        android:gravity="top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine|text"
+                        android:layout_marginLeft="10dp"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/add_campaign_message"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp"
+                        android:minLines="10"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:background="@drawable/border_add"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#F0F0F0"
+                android:gravity="center_horizontal"
+                android:text="@string/other_information"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@mipmap/date_and_time"
+                            android:drawableStart="@mipmap/date_and_time"
+                            android:drawablePadding="10dp"
+                            android:textAppearance="?android:textAppearanceSmall"/>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/color_hint">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/add__campaign_date_time_message"
+                                android:gravity="top"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:hint="@string/event_date_time"
+                                android:textAppearance="?android:textAppearanceMedium" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@mipmap/participation_fees"
+                            android:drawableStart="@mipmap/participation_fees"
+                            android:drawablePadding="10dp"
+                            android:textAppearance="?android:textAppearanceSmall"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/color_hint">
+
+                            <EditText
+                                android:gravity="top"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:id="@+id/add_campaign_fee"
+                                android:padding="10dp"
+                                android:maxLength="50"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:hint="@string/participation_fee"
+                                android:textColorHint="@color/color_hint"
+                                android:textAppearance="?android:textAppearanceMedium"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@mipmap/achievement_two"
+                            android:drawableStart="@mipmap/achievement_two"
+                            android:drawablePadding="10dp"
+                            android:textAppearance="?android:textAppearanceSmall"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/color_hint">
+
+                        <EditText
+                            android:gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:id="@+id/add_campaign_prize"
+                            android:padding="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:maxLength="50"
+                            android:hint="@string/winner_prize"
+                            android:textColorHint="@color/color_hint"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/accommodation"
+                        android:drawableStart="@mipmap/accommodation"
+                        android:drawablePadding="10dp"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_hint">
+
+                        <EditText
+                            android:gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:id="@+id/add_campaign_accommodation"
+                            android:padding="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:maxLength="50"
+                            android:hint="@string/accommodation_availability"
+                            android:textColorHint="@color/color_hint"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/ic_date_range_black_18dp"
+                        android:drawableStart="@mipmap/ic_date_range_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_hint">
+
+                        <EditText
+                            android:gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:id="@+id/add_campaign_last_date"
+                            android:padding="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:maxLength="50"
+                            android:hint="@string/last_date_regi"
+                            android:textColorHint="@color/color_hint"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/ic_location_on_black_18dp"
+                        android:drawableStart="@mipmap/ic_location_on_black_18dp"
+                        android:drawablePadding="10dp"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_hint">
+
+                        <EditText
+                            android:gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:id="@+id/add_campaign_venue"
+                            android:padding="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:maxLength="100"
+                            android:hint="@string/venue"
+                            android:textColorHint="@color/color_hint"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/email_drawable"
+                        android:drawableStart="@mipmap/email_drawable"
+                        android:drawablePadding="10dp"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_hint">
+
+                        <EditText
+                            android:gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:id="@+id/add_campaign_email"
+                            android:padding="10dp"
+                            android:hint="@string/email"
+                            android:maxLength="50"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColorHint="@color/color_hint"
+                            android:textAppearance="?android:textAppearanceMedium"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/mobile_drawable"
+                        android:drawableStart="@mipmap/mobile_drawable"
+                        android:drawablePadding="10dp"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_hint">
+
+                        <EditText
+                            android:gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:id="@+id/add_campaign_mobile"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:padding="10dp"
+                            android:maxLength="15"
+                            android:hint="@string/mob_num"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColorHint="@color/color_hint"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/website_drawable"
+                        android:drawableStart="@mipmap/website_drawable"
+                        android:drawablePadding="10dp"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/color_hint">
+
+                        <EditText
+                            android:gravity="top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textWebEditText"
+                            android:id="@+id/add_campaign_site"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:padding="10dp"
+                            android:maxLength="50"
+                            android:hint="@string/website"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColorHint="@color/color_hint"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/add_campaign_choose">
+
+                    <com.myapp.unknown.iNTCON.OtherClasses.ThreeHFourthWImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/add_campaign_iv"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/choose_image"
+                    android:alpha="0.5"
+                    android:gravity="center"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="4">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/remove_image"
+                android:text="@string/remove"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/add_camp_remove_photo"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/send"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:id="@+id/add_campaign_send"
+                android:background="@drawable/border_three"
+                android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

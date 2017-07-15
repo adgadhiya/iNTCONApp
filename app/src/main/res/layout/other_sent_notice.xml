@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="start"
+    android:gravity="start"
+    android:id="@+id/other_send__linear"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/other_notice_card"
+        app:cardBackgroundColor="#F0F0F0"
+        app:cardElevation="1dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/other_notice_date"
+        android:textSize="12sp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:textColor="@color/text_color"/>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/other_profile"
+            android:src="@mipmap/profile_default"/>
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/other_notice_name"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:paddingRight="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/another_image_second">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/other_notice_message"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@android:color/black"
+                    android:textColorLink="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:id="@+id/other_notice_time"
+                    android:layout_gravity="end"
+                    android:paddingLeft="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingRight="5dp"
+                    android:paddingEnd="5dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

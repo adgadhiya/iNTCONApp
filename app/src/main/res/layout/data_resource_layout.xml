@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:id="@+id/data_center_relative_layout"
+    android:background="?android:attr/selectableItemBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/data_center_user_profile"
+        android:background="@drawable/round_profile"
+        android:src="@mipmap/profile_default"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/data_center_layout"
+        android:layout_toRightOf="@id/data_center_user_profile"
+        android:layout_toEndOf="@id/data_center_user_profile">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginRight="35dp"
+                android:layout_marginEnd="35dp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@android:color/black"
+                android:id="@+id/data_center_title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:layout_weight="2"
+                android:id="@+id/data_center_user_name"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:visibility="gone"
+                android:background="#dcdcdc"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/data_center_created_on"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/data_center_comments" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/data_center_item_cnt"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/round"
+        tools:ignore="SmallSp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/data_center_layout"
+        android:background="#dcdcdc"/>
+
+</RelativeLayout>

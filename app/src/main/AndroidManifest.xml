@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapp.unknown.iNTCON">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".OtherClasses.MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.unity3d.ads.adunit.AdUnitActivity"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".SignIn.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Notice.Notices_Chat"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Acheivement.AchievementDetail"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Campaign.Campaign_Detail"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OtherClasses.DashBoard"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <activity
+            android:name=".Notice.AddNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Acheivement.AddAchievement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Campaign.AddCampaign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Campaign.Campaign_Chat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignIn.SignUpHere"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1102697269853461"
+            android:exported="true" />
+
+        <activity
+            android:name=".SignIn.ForgotPassword"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignIn.Profile"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InstRequest.CoursesOffered"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavigationView.PrivacyPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtherClasses.BugReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavigationView.GroupMembers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavigationView.GroupInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavigationView.CreateGroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavigationView.JoinGroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavigationView.UserRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NavigationView.SentRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataResource.DataResourceItems"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OtherClasses.FileSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataResource.ChooseResource"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Uploads.UploadResourcesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Downloads.DownloadResourcesActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".Uploads.UploadService"
+            android:exported="false" />
+        <service
+            android:name=".Downloads.DownloadService"
+            android:exported="false" />
+
+        <activity android:name=".NavigationView.FAQ"/>
+    </application>
+
+</manifest>

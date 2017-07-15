@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/all"
+        android:id="@+id/camp_ach_all"/>
+
+    <item android:title="@string/academy"
+        android:id="@+id/camp_ach_academy"/>
+
+    <item android:title="@string/private_academy"
+        android:id="@+id/camp_ach_private_academy"/>
+
+    <item android:title="@string/school"
+        android:id="@+id/camp_ach_school"/>
+
+    <item android:title="@string/private_school"
+        android:id="@+id/camp_ach_private_school"/>
+
+    <item android:title="@string/sort_by_group"
+        android:icon="@drawable/filter_no_select"
+        android:id="@+id/sort_by_group"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,265 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">iNTCON</string>
+    <string name="transition_campaign_like">transition_campaign_like</string>
+    <string name="transition_campaign_going">transition_campaign_going</string>
+    <string name="transition_campaign_interested">transition_campaign_interested</string>
+    <string name="title">Title:</string>
+    <string name="description">Description:</string>
+    <string name="choose_image">Choose Image\nRecommanded HxW:3x4</string>
+    <string name="send">send</string>
+    <string name="event_date_time">Event Date and Time</string>
+    <string name="participation_fee">Participation Fee</string>
+    <string name="winner_prize">Winner Prize</string>
+    <string name="accommodation_availability">Accommodation Availability</string>
+    <string name="last_date_regi">Last Date for Registration</string>
+    <string name="venue">Venue</string>
+    <string name="email">Email</string>
+    <string name="mob_num">Contact Number(Mobile)</string>
+    <string name="website">Website (Optional)</string>
+    <string name="optional_image">Attachment (Optional)</string>
+    <string name="enter_message">Enter Messge Here…</string>
+    <string name="for_more_detail">For More Detail</string>
+    <string name="add">Add</string>
+    <string name="uni_notice">Admin/Inst</string>
+    <string name="fac_notice">My Notice</string>
+    <string name="refresh">Top</string>
+    <string name="likes">%1$.0f Likes</string>
+    <string name="interested">%1$.0f Interested</string>
+    <string name="going">%1$.0f Going</string>
+    <string name="logout">Logout</string>
+    <string name="sort_by_group">Sort by Group</string>
+    <string name="today">TODAY</string>
+    <string name="yesterday">YESTERDAY</string>
+    <string name="chat_cnt">99+</string>
+    <string name="remove">REMOVE</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="other_information">Other Information</string>
+    <string name="or">OR</string>
+    <string name="edit">&#091;EDIT&#093;</string>
+    <string name="signup">SIGNUP</string>
+    <string name="password">Password</string>
+    <string name="user_profile">This Profile Picture and Username will be shown to other users when you wil create group, comment on something or share notices or materials"</string>
+    <string name="empty_email">Empty Email Address!</string>
+    <string name="empty_pass">Empty Password!</string>
+    <string name="signin">signin</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="signin_fb">Sign in with Facebook</string>
+    <string name="signin_google">Sign in with Google</string>
+    <string name="reset_ur_pass">RESET YOUR PASSWORD</string>
+    <string name="assoc_email">Enter Your iNTCON Email Address Associated with your Account.</string>
+    <string name="reset_pass">reset password</string>
+    <string name="course_name">Course Name</string>
+    <string name="designation">Designation (Principal,Professor,teacher etc.)</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="bug_report">User feedback goes a long way towards making our app even better. You can submit bug reports and request suggesions and enhancements for the app.</string>
+    <string name="feedback">Give Your feedback Here…</string>
+    <string name="attachment">attachment (if any)</string>
+    <string name="delete">Delete</string>
+    <string name="share_gplus">share_gplus</string>
+    <string name="share_fb">share_fb</string>
+    <string name="done">done</string>
+    <string name="download">Downloads</string>
+    <string name="item_selected" tools:ignore="PluralsCandidate">%d items selected</string>
+    <string name="home">home</string>
+    <string name="download_app">For More detail download iNTCON App now.</string>
+    <string name="play_store">https://play.google.com</string>
+    <string name="no_network">Not Connected with Internet?</string>
+    <string name="no_data">No Any data found for selected option.</string>
+    <string name="no_group_selected">Please Choose Any Group First.</string>
+    <string name="user_name">iNTCON User</string>
+    <string name="user_name_intent">userName</string>
+    <string name="user_profile_intent">userProfile</string>
+    <string name="group_info">Group Info</string>
+    <string name="change_year">Change Year</string>
+    <string name="requests">Requests</string>
+    <string name="group_members">Group Members</string>
+    <string name="add_group">Add Group</string>
+    <string name="create_group">Create Group</string>
+    <string name="join_group">Join Group</string>
+    <string name="sent_request">Sent Requests</string>
+    <string name="help_center">Help Center</string>
+    <string name="help_and_feedback">Help and Feedback</string>
+    <string name="privacy_policy">Privacy Policy and Terms of Use</string>
+    <string name="faq">FAQ</string>
+    <string name="default_image">Default Image</string>
+    <string name="drawer_open">Drawer Opened</string>
+    <string name="drawer_closed">Drawer Closed</string>
+    <string name="vertical_dots">vertical dots</string>
+    <string name="refresh_now">refresh now</string>
+    <string name="not_part_of_group">It seems you are not part of any group.</string>
+    <string name="remove_from_group">Remove From Group</string>
+    <string name="group_detail">Group Detail</string>
+    <string name="change_authentication">Change Authentication</string>>
+    <string name="remove_user">Remove User</string>
+    <string name="about_group">About Group :</string>
+    <string name="group_name">Group Name</string>
+    <string name="about">Write something about this group....</string>
+    <string name="choose_group_type">Choose Group Type</string>
+    <string name="group_profile">Group Profile</string>
+    <string name="group_info_group_id">Group Info GroupID</string>
+    <string name="is_intcon_group">Is Intcon Group</string>
+    <string name="created_on">created on %s</string>
+    <string name="private_group_type">Private Group</string>
+    <string name="institute_clg_type">Institute (University/College)</string>
+    <string name="institute_school_type">Institute (School)</string>
+    <string name="private_institute_clg_type">Private Institute (Academy Students)</string>
+    <string name="private_institute_school_type">Private Institute (School Students)</string>
+    <string name="group_type_not_found">Group type not found</string>
+    <string name="zero_favourites">0</string>
+    <string name="favourites">Favourites</string>
+    <string name="members">Members</string>
+    <string name="not_favourite">Not Favourite</string>
+    <string name="nil">NULL</string>
+    <string name="send_request">Send Request</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="leave_group">Leave Group</string>
+    <string name="search_group">Search Group</string>
+    <string name="search_result">Search result for \'%s\'</string>
+    <string name="search_result_init">Search result for \'  \'</string>
+    <string name="no_result_found_init">No result found for \' \'</string>
+    <string name="no_result_found">No result found for \'%s\'</string>
+    <string name="update">update</string>
+    <string name="group_id_intent">group_id_intent</string>
+    <string name="admin">Admin</string>
+    <string name="user">User</string>
+    <string name="sent_request_intent">Sent Request intent</string>
+    <string name="item_image">Item Image</string>
+    <string name="comments">%d Comments</string>
+    <string name="comments_default">0 Comments</string>
+    <string name="resources">%d Resources</string>
+    <string name="resources_default">0 Resources</string>
+    <string name="data_resource_item_key_intent">Data Resource Item Key</string>
+    <string name="data_resource_path_intent">Data Resource Path Intent</string>
+    <string name="ok">OK</string>
+    <string name="check_all">Check All</string>
+    <string name="none">Uncheck All</string>
+    <string name="ext">External</string>
+    <string name="Int">Internal</string>
+    <string name="cancel">Cancel</string>
+    <string name="upload_all">upload All</string>
+    <string name="file_size_KB">%1$.2fKB</string>
+    <string name="file_size_MB">%1$.2fMB</string>
+    <string name="choose_file">Choose a File</string>
+    <string name="choose_other">Choose Other</string>
+    <string name="downloading">Downloading (%d)</string>
+    <string name="downloaded">Downloaded (%d)</string>
+    <string name="uploading">Uploading (%d)</string>
+    <string name="uploaded">Uploaded (%d)</string>
+    <string name="clear_all">Clear All</string>
+    <string name="cancel_share">cancel share</string>
+    <string name="choose_gallery">Choose from Gallery</string>
+    <string name="take_picture">Take a Picture</string>
+    <string name="choose_option">Choose an Option</string>
+    <string name="all">All</string>
+    <string name="academy">Academy</string>
+    <string name="private_academy">Private Institute (Academy)</string>
+    <string name="school">School</string>
+    <string name="private_school">Private Institute (School)</string>
+    <string name="ach_list_provider_intent">Achievement List Provider Intent</string>
+    <string name="ach_group_profile_intent">Achievement Group Profile Intent</string>
+    <string name="camp_group_profile_intent">Campaign Group Profile Intent</string>
+    <string name="camp_list_provider_intent">Campaign List Provider Intent</string>
+    <string name="camp_like_interest_going_bool_intent">Campaign Like Interest Going Bool Intent</string>
+    <string name="camp_like_interest_going_cnt_intent">Campaign Like Interest Going CNT Intent</string>
+    <string name="is_data_resource_chat_intent">Is Data Resource Chat Intent</string>
+    <string name="pending_request">You do not have any pending or Cancelled requests. To send request go to option menu and click on JOIN A GROUP.</string>
+    <string name="intcon_groups">iNTCON Groups</string>
+    <string name="no_any_request">No any User request.</string>
+    <string name="not_permission">You do not have permission to add or remove User.</string>
+    <string name="uploads">Uploads</string>
+    <string name="tap_on_list">Tap on list item to choose field as your default field.</string>
+    <string name="new_notice_indicator">1</string>
+    <string name="file_size">Files size be less than 100mb</string>
+
+    <string name="AD_UNIT_ID">ca-app-pub-6225885230926727/4064911297</string>
+    <string name="facebook_app_id">1102697269853461</string>
+
+    <string-array name="year_array">
+        <item>None</item>
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+        <item>Fifth Year</item>
+    </string-array>
+
+    <string-array name="year_array_no_none">
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+        <item>Fifth Year</item>
+    </string-array>
+
+    <string-array name="year_navbar_array">
+        <item>Choose Year</item>
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Fourth Year</item>
+        <item>Fifth Year</item>
+    </string-array>
+
+    <string-array name="school_year_array">
+        <item>None</item>
+        <item>1st std</item>
+        <item>2nd std</item>
+        <item>3rd std</item>
+        <item>4th std</item>
+        <item>5th std</item>
+        <item>6th std</item>
+        <item>7th std</item>
+        <item>8th std</item>
+        <item>9th std</item>
+        <item>10th std</item>
+        <item>11th std-Science</item>
+        <item>11th std-Commerce</item>
+        <item>11th std-Arts</item>
+        <item>12th std-Science</item>
+        <item>12th std-Commerce</item>
+        <item>12th std-Arts</item>
+    </string-array>
+
+
+    <string-array name="school_year_navbar_array_no_none">
+        <item>Choose Year</item>
+        <item>1st std</item>
+        <item>2nd std</item>
+        <item>3rd std</item>
+        <item>4th std</item>
+        <item>5th std</item>
+        <item>6th std</item>
+        <item>7th std</item>
+        <item>8th std</item>
+        <item>9th std</item>
+        <item>10th std</item>
+        <item>11th std-Science</item>
+        <item>11th std-Commerce</item>
+        <item>11th std-Arts</item>
+        <item>12th std-Science</item>
+        <item>12th std-Commerce</item>
+        <item>12th std-Arts</item>
+    </string-array>
+
+
+    <string-array name="school_year_navbar_array">
+        <item>1st std</item>
+        <item>2nd std</item>
+        <item>3rd std</item>
+        <item>4th std</item>
+        <item>5th std</item>
+        <item>6th std</item>
+        <item>7th std</item>
+        <item>8th std</item>
+        <item>9th std</item>
+        <item>10th std</item>
+        <item>11th std-Science</item>
+        <item>11th std-Commerce</item>
+        <item>11th std-Arts</item>
+        <item>12th std-Science</item>
+        <item>12th std-Commerce</item>
+        <item>12th std-Arts</item>
+    </string-array>
+
+
+</resources>

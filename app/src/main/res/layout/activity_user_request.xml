@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NavigationView.UserRequest">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:id="@+id/user_request_toolbar"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme"
+        app:title="Requests"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/user_request_toolbar"
+        android:id="@+id/user_request_rv"/>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTheme2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/user_request_progressBar"
+        android:progressDrawable="@color/colorPrimary"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        android:layout_margin="50dp"
+        android:visibility="gone"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerInParent="true"
+        android:text="@string/not_permission"
+        android:drawableTop="@mipmap/ic_person_add_black_24dp"
+        android:id="@+id/user_request_message_tv"/>
+
+</RelativeLayout>

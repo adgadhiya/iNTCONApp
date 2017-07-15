@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/navigation_header_layout"
+    android:background="@mipmap/back_ground_navigation_header_three">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/profile_default"
+        android:clickable="true"
+        android:background="@drawable/round_profile"
+        android:id="@+id/navbar_header_user_profile"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navbar_header_user_name"
+        android:layout_below="@id/navbar_header_user_profile"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:clickable="true"
+        android:id="@+id/navbar_header_switch_group"
+        android:background="@color/header_color"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round"
+            android:id="@+id/navbar_header_group_profile"
+            android:src="@mipmap/create_group_profile"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:id="@+id/navbar_header_group_name"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/navbar_header_arrow_iv"
+            android:contentDescription="@string/group_info"
+            android:src="@android:drawable/arrow_down_float"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

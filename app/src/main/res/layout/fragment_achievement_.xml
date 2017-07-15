@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acheivement.Achievement_Fragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/acheivement_refreshlayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:clipToPadding="false"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarSize="2dp"
+            android:scrollbars="vertical"
+            android:id="@+id/rv_acheivement" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTheme2"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/ach_fragment_progressBar"
+        android:progressDrawable="@color/colorPrimary"
+        android:layout_gravity="center_horizontal" />
+
+    <ProgressBar
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:id="@+id/ach_progressBar"
+        android:indeterminateDrawable="@drawable/progress_dialog_back_ground"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/achievement_message_layout">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0.5"
+        android:contentDescription="@string/no_data"
+        android:layout_gravity="center"
+        android:id="@+id/achievement_message_iv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/achievement_message_tv"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/achievement_message_refresh"
+        android:text="@string/refresh_now"/>
+
+</LinearLayout>
+
+</FrameLayout>

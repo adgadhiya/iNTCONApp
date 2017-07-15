@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/share_gplus"
+        android:id="@+id/action_share_gplus"
+        android:icon="@drawable/gplus_share"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="@string/share_fb"
+        android:id="@+id/action_share_fb"
+        android:icon="@drawable/fb_share"
+        app:showAsAction="ifRoom"/>
+
+</menu>

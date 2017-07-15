@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "636567216556",
+    "firebase_url": "https://message-mi.firebaseio.com",
+    "project_id": "message-mi",
+    "storage_bucket": "message-mi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636567216556:android:34402b15ffa64b8c",
+        "android_client_info": {
+          "package_name": "com.example.unknown.message"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636567216556-fp8vjfu49dr289mls5qm2njonpcaunqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBePDCPLxdbWrUovthOuRq7sVPdFzmRQno"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

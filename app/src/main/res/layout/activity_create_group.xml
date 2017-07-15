@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationView.CreateGroup">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_group_appBarLayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/create_group_collapsing_toolbar"
+        android:layout_width="match_parent"
+        app:titleEnabled="false"
+        android:layout_height="match_parent"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <com.myapp.unknown.iNTCON.OtherClasses.SquareImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:fitsSystemWindows="true"
+            android:id="@+id/create_group_group_profile"
+            android:background="@color/colorPrimary"
+            android:src="@mipmap/create_group_profile" />
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            app:title="Create Group"
+            android:id="@+id/create_group_toolbar"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="2dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:layout_below="@id/create_group_toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:drawableStart="@drawable/create_group_drawable"
+                    android:drawableLeft="@drawable/create_group_drawable"
+                    android:textColorHint="#7FAAAAAA"
+                    android:hint="@string/group_name"
+                    android:id="@+id/create_group_group_name"
+                    android:inputType="text"
+                    android:drawablePadding="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:maxLength="50"
+                    android:textColor="@android:color/black"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_group_type"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:theme="@style/MyEditTextTheme2"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:id="@+id/create_group_spinner"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/create_group_detail_layout">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawableStart="@drawable/ic_email_black_24dp"
+                        android:drawableLeft="@drawable/ic_email_black_24dp"
+                        android:id="@+id/create_group_email"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:maxLength="50"
+                        android:hint="@string/email"
+                        android:background="@drawable/border"
+                        android:textColorHint="#7FAAAAAA"
+                        android:textColor="@android:color/black"
+                        android:inputType="textEmailAddress" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawableStart="@drawable/ic_work_black_24dp"
+                        android:drawableLeft="@drawable/ic_work_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="10dp"
+                        android:maxLength="50"
+                        android:hint="@string/designation"
+                        android:textColorHint="#7FAAAAAA"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/border"
+                        android:id="@+id/create_group_designation"
+                        android:textColor="@android:color/black"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:hint="@string/contact_number"
+                        android:drawableStart="@drawable/ic_phone_black_24dp"
+                        android:drawableLeft="@drawable/ic_phone_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="10dp"
+                        android:maxLength="12"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/border"
+                        android:textColorHint="#7FAAAAAA"
+                        android:id="@+id/create_group_contact"
+                        android:textColor="@android:color/black"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:hint="@string/website"
+                        android:drawableStart="@mipmap/website_black"
+                        android:drawableLeft="@mipmap/website_black"
+                        android:drawablePadding="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginRight="20dp"
+                        android:maxLength="50"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/border"
+                        android:textColorHint="#7FAAAAAA"
+                        android:id="@+id/create_group_website"
+                        android:textColor="@android:color/black"
+                        android:inputType="textWebEditText" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:maxLength="1000"
+                    android:hint="@string/about"
+                    android:visibility="gone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="60dp"
+                    android:minLines="10"
+                    android:hint="@string/about"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="top"
+                    android:padding="10dp"
+                    android:maxLength="1500"
+                    android:background="@drawable/border"
+                    android:textColorHint="#7FAAAAAA"
+                    android:id="@+id/create_group_about"
+                    android:textColor="@android:color/black"
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textColor="@android:color/white"
+        android:text="@string/create_group"
+        android:id="@+id/create_group_btn"
+        android:layout_margin="15dp"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_anchor="@id/create_group_appBarLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_done_white_36dp"
+        app:backgroundTint="@color/colorPrimary"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

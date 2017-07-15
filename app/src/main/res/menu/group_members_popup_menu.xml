@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/change_authentication"
+        android:id="@+id/group_members_popup_chnge_auth"/>
+
+    <item android:title="@string/remove_user"
+        android:id="@+id/group_members_popup_remove_user"/>
+</menu>
