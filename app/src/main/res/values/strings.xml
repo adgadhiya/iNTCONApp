@@ -171,8 +171,8 @@
     <string name="new_notice_indicator">1</string>
     <string name="file_size">Files size be less than 100mb</string>
 
-    <string name="AD_UNIT_ID">ca-app-pub-6225885230926727/4064911297</string>
-    <string name="facebook_app_id">1102697269853461</string>
+    <string name="AD_UNIT_ID">add your ad unit id</string>
+    <string name="facebook_app_id">Add your facebook app id</string>
 
     <string-array name="year_array">
         <item>None</item>
