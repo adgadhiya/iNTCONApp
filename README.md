@@ -32,6 +32,7 @@ There are total 4 tabs in the app.
 4. Events
 
 Navigation Bar contains two different views. 
+
 1. One view contains list of all the groups which the  user part of.
 https://lh3.googleusercontent.com/iKRvfmFACLllnIhhif4WLeGg_Vh6eu1nwnFx45D-r97V847w05JtNiBA1X9OVo7A5Y8=h900-rw
 2. Other view contains Option to create groups, Join Groups, and Other Stuff.
@@ -40,7 +41,12 @@ https://lh3.googleusercontent.com/ivIZO3bYvg3uKyH0Ndmydy8YGuOIgyUrC2eBL8aqNHuz_v
 It contains total 13 different packages.
 
 Achievement::
+AchievementListProvider.java
+Achievement_Fragment.java
+AchivementListAdapter.java
 
+AddAchievement.java
+AchievementDetail.java
 
 
 
