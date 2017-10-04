@@ -22,9 +22,28 @@ Institute always organizes Events and Competitions. Because of lake of time it i
 
 It contains all the information related to Events like Events description. Event date and time, Participation fees, Last date for registration, Accommodation availability, Winner prize etc.
 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+There are total 4 tabs in the app.
+1. Achievement
+2. Notice
+3. Resources
+4. Events
+
+Navigation Bar contains two different views. 
+1. One view contains list of all the groups which the  user part of.
+https://lh3.googleusercontent.com/iKRvfmFACLllnIhhif4WLeGg_Vh6eu1nwnFx45D-r97V847w05JtNiBA1X9OVo7A5Y8=h900-rw
+2. Other view contains Option to create groups, Join Groups, and Other Stuff.
+https://lh3.googleusercontent.com/ivIZO3bYvg3uKyH0Ndmydy8YGuOIgyUrC2eBL8aqNHuz_vDX9XpkbQEFGfKmJ6rWC7gr=h900-rw
+
 It contains total 13 different packages.
 
-Acheivement
+Achievement::
+
+
+
+
 Campaign
 DataResource
 Downloads
