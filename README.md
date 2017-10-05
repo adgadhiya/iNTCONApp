@@ -24,9 +24,9 @@ It contains all the information related to Events like Events description. Event
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-Firebase database is used as backend server provided by google.
+<p style="color:#0000FF";>Firebase database is used as backend server provided by google.
 If you want to know more about firebase you can read from :: https://firebase.google.com.
-
+</p>
 
 There are total 4 tabs in the app.
 1. Achievement
