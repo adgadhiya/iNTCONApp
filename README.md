@@ -49,18 +49,18 @@ Navigation Bar contains two different views.
 It contains total 13 different packages.
 
 <h1> 1. Achievement </h1>
-<p align="center">
-  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-12-17-103513.png" width="275" height="500"/>
-</p>
-
-
 
 <h3> AchievementListProvider.java, 
 Achievement_Fragment.java, 
 AchivementListAdapter.java </h3>
 
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-12-17-103513.png" width="275" height="500"/>
+</p>
+
+
 This three class contains code for the <strong>FIRST TAB</strong>. <br> 
-Achievement_Fragment.java is fragment with required methods like loads achievements, load old achievements and when user refresh the tab look for new post(Achievement). <br>
+Achievement_Fragment.java is fragment with required methods like load achievements, load old achievements and when user refresh the tab look for new post(Achievement). <br>
 
 <strong>Please also check it's XML file(front end Design)</strong>
 
@@ -71,6 +71,10 @@ AchivementListAdapter.java is an Adapter class implemented from Recyclerview. Th
 <h3>AchievementDetail.java</h3>
 This is new activity. This activity will be launched when uesr click item from Achievement_Fragment class. This class provides the information about the Achievement.
 
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-12-17-103850.png" width="275" height="500"/>
+</p>
+
 <strong>Please also check it's XML file(front end Design)</strong><br>
 
 <h3>AddAchievement.java</h3>
@@ -80,6 +84,13 @@ All the achievement listed in Achievement_Fragment are added from this activity.
 <h1>2. Campaign</h1>
 
 <h3>Campaign_Fragment.java, CampaignListAdapter.java, CampaignDetailProvider.java</h3>
+
+This three class contains code for the <strong>SECOND TAB</strong>. <br> Campaign_Fragment.java is fragment with required methods like load Events, load old achievements and when user refresh the tab look for new post(Events).<br>
+
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-11-19-092104.png" width="275" height="500"/>
+</p>
+
 <h3>Campaign_Detail.java</h3>
 <h3>AddCampaign.java<h3>
 <h3>Campaign_Chat.java</h3>
