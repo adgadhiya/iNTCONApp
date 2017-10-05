@@ -24,7 +24,9 @@ It contains all the information related to Events like Events description. Event
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-<h3 style="color:#0000FF";>Firebase database is used as backend server provided by google.If you want to know more about firebase you can read from :: https://firebase.google.com.</h3>
+<h3>Firebase database is used as backend server provided by google.If you want to know more about firebase you can read from :: https://firebase.google.com.</h3>
+
+<h3>NOTE:: FACE_BOOK LOGIN and LIKE will not work, because i've deactivated that feature.</h3>
 
 There are total 4 tabs in the app.
 1. Achievement
@@ -77,22 +79,21 @@ All the achievement listed in Achievement_Fragment are added from this activity.
 
 <h1>2. Campaign</h1>
 
+<h3>Campaign_Fragment.java, CampaignListAdapter.java, CampaignDetailProvider.java</h3>
+<h3>Campaign_Detail.java</h3>
+<h3>AddCampaign.java<h3>
+<h3>Campaign_Chat.java</h3>
+<h3>KeysAndGroupKeys.java
+URLSpanNoUnderline.java</h3>
 
-
-DataResource
-Downloads
-InstRequest
-NavigationView
-Notice
-OtherClasses
-Preferences
-SQLiteDataBase
-SignIn
-Uploads
-ViewHolders
-
-
-NOTE:: FACE_BOOK LOGIN and LIKE will not work, because i've deactivated that feature.
-
-
-
+<h1>3. DataResource</h1>
+<h1>4. Downloads</h1>
+<h1>5. InstRequest</h1>
+<h1>6. NavigationView</h1>
+<h1>7. Notice</h1>
+<h1>8. OtherClasses</h1>
+<h1>9. Preferences</h1>
+<h1>10. SQLiteDataBase</h1>
+<h1>11. SignIn</h1>
+<h1>12. Uploads</h1>
+<h1>13. ViewHolders</h1>
