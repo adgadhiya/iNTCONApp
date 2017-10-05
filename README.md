@@ -24,9 +24,7 @@ It contains all the information related to Events like Events description. Event
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-<h4 style="color:#0000FF";>Firebase database is used as backend server provided by google.
-If you want to know more about firebase you can read from :: https://firebase.google.com.
-</h4>
+<p style="color:#0000FF";>Firebase database is used as backend server provided by google.If you want to know more about firebase you can read from :: <a><href="https://firebase.google.com"></a>.</p>
 
 There are total 4 tabs in the app.
 1. Achievement
@@ -55,8 +53,8 @@ It contains total 13 different packages.
 
 
 
-<h3> AchievementListProvider.java<br>
-Achievement_Fragment.java<br>
+<h3> AchievementListProvider.java, 
+Achievement_Fragment.java, 
 AchivementListAdapter.java </h3>
 
 This three class contains code for the <strong>FIRST TAB</strong>. <br> 
