@@ -48,13 +48,11 @@ Navigation Bar contains two different views.
 
 It contains total 13 different packages.
 
-1. Achievement::
+<h1> 1. Achievement </h1>
 
 AchievementListProvider.java
 Achievement_Fragment.java
 AchivementListAdapter.java
-
-This three classes contains code for <h1> FIRST TAB </h1>
 
 
 AddAchievement.java
