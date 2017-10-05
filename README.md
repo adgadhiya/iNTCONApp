@@ -38,7 +38,9 @@ Navigation Bar contains two different views.
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-223306.png" width="250" height="500"/>
 </p>
 2. Other view contains Option to create groups, Join Groups, and Other Stuff.
-https://lh3.googleusercontent.com/ivIZO3bYvg3uKyH0Ndmydy8YGuOIgyUrC2eBL8aqNHuz_vDX9XpkbQEFGfKmJ6rWC7gr=h900-rw
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/Screenshot_2017-04-04-23-40-44-218.png" width="250" height="500"/>
+</p>
 
 It contains total 13 different packages.
 
