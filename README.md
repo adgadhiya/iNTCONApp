@@ -49,12 +49,19 @@ Navigation Bar contains two different views.
 It contains total 13 different packages.
 
 <h1> 1. Achievement </h1>
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-12-17-103513.png" width="250" height="500"/>
+</p>
+
+
 
 <h3> AchievementListProvider.java<br>
 Achievement_Fragment.java<br>
 AchivementListAdapter.java </h3>
 
-
+This three class contains code for the <strong>FIRST TAB</strong>. <br> 
+Achievement_Fragment.java is fragment with required methods like loads achievements, load old achievements and when user refresh the tab look for new post(Achievement). <br>
+AchievementListProvider.java contains a class with all required fields like group_key, title, date, imagepath, key, content, user id, likes, group_type
 
 
 
