@@ -39,18 +39,18 @@ Navigation Bar contains two different views.
 
 1. One view contains list of all the groups which the  user part of.
 <p align="center">
-  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-223306.png" width="250" height="500"/>
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-223306.png" width="300" height="500"/>
 </p>
 2. Other view contains Option to create groups, Join Groups, Sent Request, Group Members, Group Details and Other Stuff.
 <p align="center">
-  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/Screenshot_2017-04-04-23-40-44-218.png" width="250" height="500"/>
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/Screenshot_2017-04-04-23-40-44-218.png" width="300" height="500"/>
 </p>
 
 It contains total 13 different packages.
 
 <h1> 1. Achievement </h1>
 <p align="center">
-  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-12-17-103513.png" width="250" height="500"/>
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-12-17-103513.png" width="300" height="500"/>
 </p>
 
 
