@@ -50,9 +50,12 @@ It contains total 13 different packages.
 
 <h1> 1. Achievement </h1>
 
-AchievementListProvider.java
+<h6> AchievementListProvider.java
 Achievement_Fragment.java
-AchivementListAdapter.java
+AchivementListAdapter.java </h6>
+
+
+
 
 
 AddAchievement.java
