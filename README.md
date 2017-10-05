@@ -22,8 +22,11 @@ Institute always organizes Events and Competitions. Because of lake of time it i
 
 It contains all the information related to Events like Events description. Event date and time, Participation fees, Last date for registration, Accommodation availability, Winner prize etc.
 
-
 --------------------------------------------------------------------------------------------------------------------------------------
+
+Firebase database is used as backend server provided by google.
+If you want to know more about firebase you can read from :: https://firebase.google.com.
+
 
 There are total 4 tabs in the app.
 1. Achievement
@@ -33,21 +36,26 @@ There are total 4 tabs in the app.
 
 Navigation Bar contains two different views. 
 
+
 1. One view contains list of all the groups which the  user part of.
 <p align="center">
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-223306.png" width="250" height="500"/>
 </p>
-2. Other view contains Option to create groups, Join Groups, and Other Stuff.
+2. Other view contains Option to create groups, Join Groups, Sent Request, Group Members, Group Details and Other Stuff.
 <p align="center">
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/Screenshot_2017-04-04-23-40-44-218.png" width="250" height="500"/>
 </p>
 
 It contains total 13 different packages.
 
-Achievement::
+1. Achievement::
+
 AchievementListProvider.java
 Achievement_Fragment.java
 AchivementListAdapter.java
+
+This three classes contains code for <h1> FIRST TAB </h1>
+
 
 AddAchievement.java
 AchievementDetail.java
