@@ -80,20 +80,34 @@ This is new activity. This activity will be launched when uesr click item from A
 <h3>AddAchievement.java</h3>
 All the achievement listed in Achievement_Fragment are added from this activity. 
 
-
 <h1>2. Campaign</h1>
 
-<h3>Campaign_Fragment.java, CampaignListAdapter.java, CampaignDetailProvider.java</h3>
+<h3>Campaign_Fragment.java, CampaignListAdapter.java</h3>
 
-This three class contains code for the <strong>SECOND TAB</strong>. <br> Campaign_Fragment.java is fragment with required methods like load Events, load old achievements and when user refresh the tab look for new post(Events).<br>
+This two class contains code for the <strong>SECOND TAB</strong>. <br> Campaign_Fragment.java is fragment with required methods like load Events, load old achievements and when user refresh the tab look for new post(Events).<br>
+
+<strong>Adapter class for this fragment is adapted from Achievement(AchivementListAdapter.java)</strong>
 
 <p align="center">
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-11-19-092104.png" width="275" height="500"/>
 </p>
 
-<h3>Campaign_Detail.java</h3>
+<h3>Campaign_Detail.java, CampaignDetailProvider.java</h3>
+
+Campaign_Detail.java is an activity which will lainch after clicking an item from event list.
+
+CampaignDetailProvider.java contains all the required information of the event like Event title, Event Detail, Event Date, Registration Fees, prize, venue, Contact Detail, Last date for registration, Event Date, Accommodation etc.
+
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-11-19-091930.png" width="275" height="500"/>
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-11-19-091952.png" width="275" height="500"/>
+</p>
+
+
 <h3>AddCampaign.java<h3>
+
 <h3>Campaign_Chat.java</h3>
+
 <h3>KeysAndGroupKeys.java, URLSpanNoUnderline.java</h3>
 
 <h1>3. DataResource</h1>
