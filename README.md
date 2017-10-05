@@ -83,17 +83,114 @@ All the achievement listed in Achievement_Fragment are added from this activity.
 <h3>Campaign_Detail.java</h3>
 <h3>AddCampaign.java<h3>
 <h3>Campaign_Chat.java</h3>
-<h3>KeysAndGroupKeys.java
-URLSpanNoUnderline.java</h3>
+<h3>KeysAndGroupKeys.java, URLSpanNoUnderline.java</h3>
 
 <h1>3. DataResource</h1>
+ChooseResource.java
+DataResourceAdapter.java
+DataResourceItemProvider.java
+DataResourceItems.java
+DataResourceProvider.java
+DataResource_Fragment.java
+UploadResourceAdapter.java
+
 <h1>4. Downloads</h1>
+DownloadResourcesActivity.java
+DownloadService.java
+DownloadedResourcesAdapter.java
+DownloadingResourcesAdapter.java
+
 <h1>5. InstRequest</h1>
+CoursesOffered.java
+FieldDetail.java
+
+
 <h1>6. NavigationView</h1>
+CreateGroup.java
+FAQ.java
+FAQClass.java
+GroupInfo.java
+GroupList.java
+GroupMemberViewAdapter.java
+GroupMembers.java
+GroupRequest.java
+IntconGroupAdapter.java
+JoinGroup.java
+PrivacyPolicy.java
+SearchGroupAdapter.java
+SentRequest.java
+UserGroupListAdapter.java
+UserGroupListClass.java
+UserRequest.java
+UserRequestDetailClass.java
+
+
 <h1>7. Notice</h1>
+AddNotice.java
+My_Notice.java
+NoticeChatListAdapter.java
+NoticeChatListProvider.java
+NoticeListAdapter.java
+NoticeListProvider.java
+Notice_Fragment.java
+Notices_Chat.java
+
+
 <h1>8. OtherClasses</h1>
+AvatarImageBehavior.java
+BoolClass.java
+BugReport.java
+BugReportClass.java
+CheckableRelativeLayout.java
+CustomList.java
+CustomListSingleOnly.java
+DashBoard.java
+DialogHandler.java
+FileSelectionActivity.java
+FragmentAdapter.java
+GlobalNames.java
+GroupProfile.java
+ImageSaver.java
+Like_Interested_Going_Bool.java
+Like_Interested_Going_Cnt.java
+MyApplication.java
+NetworkConnectionCheck.java
+OurClient.java
+SquareImageView.java
+ThreeHFourthWImageView.java
+UserProfile.java
+
+
 <h1>9. Preferences</h1>
+AllPreferences.java
+
+
 <h1>10. SQLiteDataBase</h1>
+SQLiteDataBaseCheckChange.java
+SQLiteDataBaseHelperClass.java
+SqliteDataBaseDownloadedOrError.java
+SqliteDataBaseDownloading.java
+SqliteDataBaseShare.java
+SqliteDataBaseUploadedOrError.java
+SqliteDataBaseUploading.java
+
+
 <h1>11. SignIn</h1>
+ForgotPassword.java
+MainActivity.java
+Profile.java
+SignUpHere.java
+
+
 <h1>12. Uploads</h1>
+UploadResourcesListActivity.java
+UploadService.java
+UploadedResourceListAdapter.java
+UploadingResourcesAdapter.java
+
+
 <h1>13. ViewHolders</h1>
+DataResourceItemHolder.java
+FAQViewHolder.java
+FieldHolder.java
+UserRequestViewHolder.java
