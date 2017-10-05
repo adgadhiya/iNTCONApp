@@ -58,14 +58,21 @@ Achievement_Fragment.java,
 AchivementListAdapter.java </h3>
 
 This three class contains code for the <strong>FIRST TAB</strong>. <br> 
-Achievement_Fragment.java is fragment with required methods like loads achievements, load old achievements and when user refresh the tab look for new post(Achievement). <br>
-AchievementListProvider.java contains a class with all required fields like group_key, title, date, imagepath, key, content, user id, likes, group_type
+Achievement_Fragment.java is fragment with required methods like loads achievements, load old achievements and when user refresh the tab look for new post(Achievement). <br><br>
 
+<strong>Please also check it's XML file(front end Design)<strong>
 
+AchievementListProvider.java contains a class with all required fields like group_key, title, date, imagepath, key, content, user id, likes, group_type etc.<br><br>
 
-AddAchievement.java
-AchievementDetail.java
+AchivementListAdapter.java is an Adapter class implemented from Recyclerview. This class also handles click events.<br>
 
+<h3>AchievementDetail.java<h3>
+This is new activity. This activity will be launched when uesr click item from Achievement_Fragment class. This class provides the information about the Achievement.
+
+<strong>Please also check it's XML file(front end Design)<strong>
+
+<h3>AddAchievement.java<h3>
+All the achievement listed in Achievement_Fragment are added from this activity. 
 
 
 Campaign
