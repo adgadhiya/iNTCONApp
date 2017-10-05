@@ -105,18 +105,26 @@ CampaignDetailProvider.java contains all the required information of the event l
 
 
 <h3>AddCampaign.java<h3>
+All the achievement listed in Achievement_Fragment are added from this activity. 
 
 <h3>Campaign_Chat.java</h3>
+People can chat with event organizers and other people from this activity. This activity will open when user clicks the BLUE COLOR button with number.
+
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-231032.png" width="275" height="500"/>
+</p>
 
 <h3>KeysAndGroupKeys.java, URLSpanNoUnderline.java</h3>
+This two classes are to support Campaign_Detail.java class(Activity).
 
 <h1>3. DataResource</h1>
-ChooseResource.java
+DataResource_Fragment.java
 DataResourceAdapter.java
+DataResourceProvider.java
+
+ChooseResource.java
 DataResourceItemProvider.java
 DataResourceItems.java
-DataResourceProvider.java
-DataResource_Fragment.java
 UploadResourceAdapter.java
 
 <h1>4. Downloads</h1>
@@ -126,6 +134,7 @@ DownloadedResourcesAdapter.java
 DownloadingResourcesAdapter.java
 
 <h1>5. InstRequest</h1>
+
 CoursesOffered.java
 FieldDetail.java
 
