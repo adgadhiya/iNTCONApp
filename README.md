@@ -34,18 +34,6 @@ There are total 4 tabs in the app.
 3. Resources
 4. Events
 
-Navigation Bar contains two different views. 
-
-
-1. One view contains list of all the groups which the  user part of.
-<p align="center">
-  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-223306.png" width="275" height="500"/>
-</p>
-2. Other view contains Option to create groups, Join Groups, Sent Request, Group Members, Group Details and Other Stuff.
-<p align="center">
-  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/Screenshot_2017-04-04-23-40-44-218.png" width="275" height="500"/>
-</p>
-
 It contains total 13 different packages.
 
 <h1> 1. Achievement </h1>
@@ -151,24 +139,45 @@ Delete button is used to delete any matetial from the list<br>
 
 <h3>ChooseResource.java
 UploadResourceAdapter.java</h3>
-This two classes are to support user while uploading and choosing the mateirals to thread.
-
+This two classes are to support user while uploading and choosing the materials to thread.
 
 
 <h1>4. Downloads</h1>
-DownloadResourcesActivity.java
-DownloadService.java
-DownloadedResourcesAdapter.java
-DownloadingResourcesAdapter.java
+
+<h3>DownloadResourcesActivity.java, DownloadService.java, DownloadedResourcesAdapter.java, DownloadingResourcesAdapter.java</h3>
+
+This package provides backend facility when user download the materials.
+
+<strong>DownloadResourcesActivity.java</strong> provides the list of the the materials being downloaded and already downloaded.<br>
+
+<strong>DownloadService.java</strong> runs in back ground. When download completes this service will be destroyed.
+
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-104056.png" width="275" height="500"/>
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-104145.png" width="275" height="500"/>
+</p>
+
 
 <h1>5. InstRequest</h1>
 
-CoursesOffered.java
-FieldDetail.java
+<h3>CoursesOffered.java
+FieldDetail.java</h3>
 
+This is simple package which provides the cources offered by the institutes.
 
 <h1>6. NavigationView</h1>
+
+1. One view contains list of all the groups which the  user part of.
+2. Other view contains Option to create groups, Join Groups, Sent Request, Group Members, Group Details and Other Stuff.
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-223306.png" width="275" height="500"/>
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/Screenshot_2017-04-04-23-40-44-218.png" width="275" height="500"/>
+</p>
+
+
 CreateGroup.java
+
+
 FAQ.java
 FAQClass.java
 GroupInfo.java
