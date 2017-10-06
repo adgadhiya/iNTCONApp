@@ -232,29 +232,35 @@ This classes contains code for the <strong>SECOND TAB</strong>. <br> Notice_Frag
 <h3>AddNotice.java</h3>
 
 <h1>8. OtherClasses</h1>
-AvatarImageBehavior.java
-BoolClass.java
-BugReport.java
-BugReportClass.java
-CheckableRelativeLayout.java
-CustomList.java
-CustomListSingleOnly.java
-DashBoard.java
-DialogHandler.java
-FileSelectionActivity.java
-FragmentAdapter.java
-GlobalNames.java
-GroupProfile.java
-ImageSaver.java
-Like_Interested_Going_Bool.java
-Like_Interested_Going_Cnt.java
-MyApplication.java
-NetworkConnectionCheck.java
-OurClient.java
-SquareImageView.java
-ThreeHFourthWImageView.java
-UserProfile.java
+<h3>DashBoard.java, FragmentAdapter.java</h3>
+This is the main activity with inflates all the four fragments and it will launch first after user logged in.<br>
+FragmentAdapter.java is adpter for all the fragments.<br>
 
+<h3>GlobalNames.java</h3>
+All the global variables are initialized in this class.<br>
+
+
+<h3>AvatarImageBehavior.java<br>
+BoolClass.java<br>
+BugReport.java<br>
+BugReportClass.java<br>
+CheckableRelativeLayout.java<br>
+CustomList.java<br>
+CustomListSingleOnly.java<br>
+DialogHandler.java<br>
+FileSelectionActivity.java<br>
+GroupProfile.java<br>
+ImageSaver.java<br>
+Like_Interested_Going_Bool.java<br>
+Like_Interested_Going_Cnt.java<br>
+MyApplication.java<br>
+NetworkConnectionCheck.java<br>
+OurClient.java<br>
+SquareImageView.java<br>
+ThreeHFourthWImageView.java<br>
+UserProfile.java<br></h3>
+
+All the other class to support the app.<br>
 
 <h1>9. Preferences</h1>
 <h3>AllPreferences.java</h3>
