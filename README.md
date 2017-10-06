@@ -118,7 +118,7 @@ People can chat with event organizers and other people from this activity. This 
 This two classes are to support Campaign_Detail.java class(Activity).
 
 
-<body><p style="color:#FF0000";>Red paragraph text</p></body>
+<p style="color:#FF0000";>Red paragraph text</p>
 
 <h1>3. DataResource</h1>
 DataResource_Fragment.java
