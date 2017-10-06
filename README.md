@@ -189,18 +189,18 @@ UserRequests.java activity provides the list of all the users who wished to part
 This Activity provides the list of all the users, who are part of the group.
 
 
-<h3>GroupInfo.java</h3>
+<h3>GroupInfo.java, GroupList.java</h3>
 
 <p align="center">
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-115609.png" width="275" height="500"/>
 </p>
 
-<h3>CreateGroup.java</h3>
+<h3>CreateGroup.java, GroupRequest.java</h3>
 <p align="center">
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-22-125703.png" width="275" height="500"/>
 </p>
 
-<h3>JoinGroup.java</h3>
+<h3>JoinGroup.java, IntconGroupAdapter.java, SearchGroupAdapter.java, UserGroupListAdapter.java, UserGroupListClass.java</h3>
 <p align="center">
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-120154.png" width="275" height="500"/>
 </p>
@@ -215,13 +215,6 @@ This activity contains all the requests sent by user to groups.
 <p align="center">
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-120643.png" width="275" height="500"/>
 </p>
-
-GroupRequest.java
-GroupList.java
-IntconGroupAdapter.java
-SearchGroupAdapter.java
-UserGroupListAdapter.java
-UserGroupListClass.java
 
 
 <h1>7. Notice</h1>
