@@ -175,25 +175,53 @@ This is simple package which provides the cources offered by the institutes.
 </p>
 
 
-CreateGroup.java
+<h3>UserRequest.java, UserRequestDetailClass.java</h3>
+
+UserRequests.java activity provides the list of all the users who wished to part of given group.
+
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-11-26-172707.png" width="275" height="500"/>
+</p>
 
 
-FAQ.java
-FAQClass.java
-GroupInfo.java
-GroupList.java
-GroupMemberViewAdapter.java
-GroupMembers.java
+<h3>GroupMembers.java, GroupMemberViewAdapter.java</h3>
+
+This Activity provides the list of all the users, who are part of the group.
+
+
+<h3>GroupInfo.java</h3>
+
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-115609.png" width="275" height="500"/>
+</p>
+
+<h3>CreateGroup.java</h3>
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-22-125703.png" width="275" height="500"/>
+</p>
+
+<h3>JoinGroup.java</h3>
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-120154.png" width="275" height="500"/>
+</p>
+
+
+<h3>SentRequest.java</h3>
+This activity contains all the requests sent by user to groups.
+
+<h3>PrivacyPolicy.java<h3>
+
+<h3>FAQ.java, FAQClass.java</h3>
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-120643.png" width="275" height="500"/>
+</p>
+
 GroupRequest.java
+GroupList.java
 IntconGroupAdapter.java
-JoinGroup.java
-PrivacyPolicy.java
 SearchGroupAdapter.java
-SentRequest.java
 UserGroupListAdapter.java
 UserGroupListClass.java
-UserRequest.java
-UserRequestDetailClass.java
 
 
 <h1>7. Notice</h1>
