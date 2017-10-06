@@ -84,7 +84,7 @@ All the achievement listed in Achievement_Fragment are added from this activity.
 
 <h3>Campaign_Fragment.java, CampaignListAdapter.java</h3>
 
-This two class contains code for the <strong>SECOND TAB</strong>. <br> Campaign_Fragment.java is fragment with required methods like load Events, load old achievements and when user refresh the tab look for new post(Events).<br>
+This two class contains code for the <strong>LAST TAB</strong>. <br> Campaign_Fragment.java is fragment with required methods like load Events, load old Evenets and when user refresh the tab look for new post(Events).<br>
 
 <strong>Adapter class for this fragment is adapted from Achievement(AchivementListAdapter.java)</strong>
 
@@ -94,7 +94,7 @@ This two class contains code for the <strong>SECOND TAB</strong>. <br> Campaign_
 
 <h3>Campaign_Detail.java, CampaignDetailProvider.java</h3>
 
-Campaign_Detail.java is an activity which will lainch after clicking an item from event list.
+Campaign_Detail.java is an activity which will lainch after clicking an item from Campaign_Fragment.
 
 CampaignDetailProvider.java contains all the required information of the event like Event title, Event Detail, Event Date, Registration Fees, prize, venue, Contact Detail, Last date for registration, Event Date, Accommodation etc.
 
@@ -104,11 +104,11 @@ CampaignDetailProvider.java contains all the required information of the event l
 </p>
 
 
-<h3>AddCampaign.java<h3>
-All the achievement listed in Achievement_Fragment are added from this activity. 
+<h3>AddCampaign.java</h3>
+All the Events listed in Campaign_Fragment are added from this activity. 
 
 <h3>Campaign_Chat.java</h3>
-People can chat with event organizers and other people from this activity. This activity will open when user clicks the BLUE COLOR button with number.
+People can chat with event organizers and other people from this activity. This activity will open when user clicks the <strong>BLUE COLOR</strong> button with number.
 
 <p align="center">
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-231032.png" width="275" height="500"/>
@@ -125,14 +125,35 @@ This two classes are to support Campaign_Detail.java class(Activity).
 
 
 <h1>3. DataResource</h1>
-DataResource_Fragment.java
-DataResourceAdapter.java
-DataResourceProvider.java
 
-ChooseResource.java
-DataResourceItemProvider.java
-DataResourceItems.java
-UploadResourceAdapter.java
+<h3>DataResource_Fragment.java, DataResourceAdapter.java, DataResourceProvider.java</h3>
+
+This three class contains code for the <strong>THIRD TAB</strong>. <br> DataResource_Fragment.java is fragment with required methods like load list of uploaded materials for given grou and when user refresh the tab look for recently uploaded Materials.<br>
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-220919.png" width="275" height="500"/>
+</p>
+
+
+<h3>DataResourceItems.java, DataResourceItemProvider.java</h3>
+
+DataResourceItems.java is an activity which will lainch after clicking an item from Item from DataResource_Fragment.<br>
+<h4>I've used FirebaseRecyclerAdapter instead of using my custom adapter to show list</h4>
+
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-03-29-225508.png" width="275" height="500"/>
+</p>
+
+Options with FAB will be available only to the user who have created this thread. <br>
+Add button is used to add any knid of material upto 100MB.<br>
+Share Button is used to share materials with other thread or with other group without uploading all the mateials second time.<br>
+Edit button is used to edit name of the material.<br>
+Delete button is used to delete any matetial from the list<br>
+
+<h3>ChooseResource.java
+UploadResourceAdapter.java</h3>
+This two classes are to support user while uploading and choosing the mateirals to thread.
+
+
 
 <h1>4. Downloads</h1>
 DownloadResourcesActivity.java
