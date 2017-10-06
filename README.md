@@ -117,6 +117,9 @@ People can chat with event organizers and other people from this activity. This 
 <h3>KeysAndGroupKeys.java, URLSpanNoUnderline.java</h3>
 This two classes are to support Campaign_Detail.java class(Activity).
 
+
+<body><p style="color:#FF0000";>Red paragraph text</p></body>
+
 <h1>3. DataResource</h1>
 DataResource_Fragment.java
 DataResourceAdapter.java
