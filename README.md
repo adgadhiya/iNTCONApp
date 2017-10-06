@@ -157,7 +157,6 @@ This package provides backend facility when user download the materials.
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-104145.png" width="275" height="500"/>
 </p>
 
-
 <h1>5. InstRequest</h1>
 
 <h3>CoursesOffered.java
@@ -187,7 +186,6 @@ UserRequests.java activity provides the list of all the users who wished to part
 <h3>GroupMembers.java, GroupMemberViewAdapter.java</h3>
 
 This Activity provides the list of all the users, who are part of the group.
-
 
 <h3>GroupInfo.java, GroupList.java</h3>
 
@@ -282,16 +280,11 @@ Other classed to support the app.
   <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-095818.png" width="275" height="500"/>
 </p>
 
-
 <h1>12. Uploads</h1>
-UploadResourcesListActivity.java
-UploadService.java
-UploadedResourceListAdapter.java
-UploadingResourcesAdapter.java
-
+<h3>UploadResourcesListActivity.java, UploadService.java, UploadedResourceListAdapter.java, UploadingResourcesAdapter.java</h3>
+This package provides backend facility when user download the materials.<br>
+<strong>UploadResourcesListActivity.java</strong> provides the list of the the materials being uploaded and already uploaded.<br>
+<strong>UploadService.java</strong> runs in back ground. When upload completes this service will be destroyed.
 
 <h1>13. ViewHolders</h1>
-DataResourceItemHolder.java
-FAQViewHolder.java
-FieldHolder.java
-UserRequestViewHolder.java
+<h3>DataResourceItemHolder.java, FAQViewHolder.java, FieldHolder.java, UserRequestViewHolder.java</h3>
