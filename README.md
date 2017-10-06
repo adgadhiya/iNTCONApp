@@ -117,8 +117,12 @@ People can chat with event organizers and other people from this activity. This 
 <h3>KeysAndGroupKeys.java, URLSpanNoUnderline.java</h3>
 This two classes are to support Campaign_Detail.java class(Activity).
 
+<h2>Share on Facebook and Google+</h2>
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-11-19-093556.png" width="275" height="500"/>
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-11-19-093707.png" width="275" height="500"/>
+</p>
 
-<p style="color:#FF0000";>Red paragraph text</p>
 
 <h1>3. DataResource</h1>
 DataResource_Fragment.java
