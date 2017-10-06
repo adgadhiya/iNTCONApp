@@ -218,15 +218,20 @@ This activity contains all the requests sent by user to groups.
 
 
 <h1>7. Notice</h1>
-AddNotice.java
-My_Notice.java
-NoticeChatListAdapter.java
-NoticeChatListProvider.java
-NoticeListAdapter.java
-NoticeListProvider.java
-Notice_Fragment.java
-Notices_Chat.java
 
+<h3>Notice_Fragment.java, My_Notice.java, NoticeListProvider.java, NoticeListAdapter.java</h3>
+This classes contains code for the <strong>SECOND TAB</strong>. <br> Notice_Fragment.java is fragment with required methods like load Notices, load old Notices and when user refresh the tab look for new post(Notice).<br>
+
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-12-12-110228.png" width="275" height="500"/>
+</p>
+
+<h3>Notices_Chat.java, NoticeChatListAdapter.java, NoticeChatListProvider.java</h3>
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2016-12-17-100414.png" width="275" height="500"/>
+</p>
+
+<h3>AddNotice.java</h3>
 
 <h1>8. OtherClasses</h1>
 AvatarImageBehavior.java
@@ -254,24 +259,28 @@ UserProfile.java
 
 
 <h1>9. Preferences</h1>
-AllPreferences.java
+<h3>AllPreferences.java</h3>
+All the preference variables are defined in this class.
 
 
 <h1>10. SQLiteDataBase</h1>
-SQLiteDataBaseCheckChange.java
-SQLiteDataBaseHelperClass.java
-SqliteDataBaseDownloadedOrError.java
-SqliteDataBaseDownloading.java
-SqliteDataBaseShare.java
-SqliteDataBaseUploadedOrError.java
-SqliteDataBaseUploading.java
+<h3>SqliteDataBaseDownloadedOrError.java, SqliteDataBaseDownloading.java</h3>
+Local database to store how many materials downloaded at given time and wheather the material is downloaded or some error occurred.
+
+<h3>SqliteDataBaseUploadedOrError.java, SqliteDataBaseUploading.java</h3>
+Local database to store how many materials uploaded at given time and wheather the material is uploaded successfully or some error occurred.
+
+<h3>SQLiteDataBaseCheckChange.java, SQLiteDataBaseHelperClass.java, SqliteDataBaseShare.java</h3>
+Other classed to support the app.
 
 
 <h1>11. SignIn</h1>
-ForgotPassword.java
-MainActivity.java
-Profile.java
-SignUpHere.java
+<h3>ForgotPassword.java, MainActivity.java, Profile.java, SignUpHere.java</h3>
+
+<p align="center">
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-095745.png" width="275" height="500"/>
+  <img src="https://github.com/adgadhiya/iNTCONApp/blob/master/device-2017-10-06-095818.png" width="275" height="500"/>
+</p>
 
 
 <h1>12. Uploads</h1>
